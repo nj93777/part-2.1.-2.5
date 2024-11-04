@@ -1,10 +1,9 @@
 import React from 'react';
 
-const Part = ({ name, exercises }) => {
-  console.log(`Rendering Part: ${name} with ${exercises} exercises`);
+const Part = ({ part }) => {
   return (
     <p>
-      {name} {exercises}
+      {part.name} {part.exercises}
     </p>
   );
 };

@@ -1,12 +1,11 @@
 import React from 'react';
-import Part from './Part'; 
+import Part from './Part';
 
 const Content = ({ parts }) => {
-  console.log('Rendering Content with parts:', parts);
   return (
     <div>
-      {parts.map((part, index) => (
-        <Part key={index} name={part.name} exercises={part.exercises} />
+      {parts.map(part => (
+        <Part key={part.id} part={part} />
       ))}
     </div>
   );
